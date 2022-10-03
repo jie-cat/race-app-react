@@ -2,9 +2,30 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+用ReactJS切版, 使用到"react-scroll"做導覽列滑動對應頁面功能,完成RWD網頁
+
+<table>
+<tr>
+  <td><img src="https://github.com/jie-cat/race-app-react/blob/main/src/assets/project.png" width="650"></td>
+  <td><img src="https://github.com/jie-cat/race-app-react/blob/main/src/assets/project-rwd.png" width="400"></td>
+</tr>
+</table>
+
+
+
+
+## Requirement
+
+前端（Frontend）：NVM、Yarn、Node.js
+
+## Build Setup (Local)
+
+1. `yarn create react-app race-app-react`
+2. `yarn add react-icons`
+3. `yarn add react-scroll`
+
 
 ### `yarn start`
 
