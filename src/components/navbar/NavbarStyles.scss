@@ -1,0 +1,119 @@
+.navbar {
+  width: 100%;
+  // following screen slide
+  position: fixed;
+  z-index: 5;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  .logo {
+    z-index: 7;
+    h1 {
+      color: #fff;
+    }
+  }
+
+  .nav_menu {
+    display: flex;
+    li {
+      padding: 10px;
+      color: #fff;
+      cursor: pointer;
+      a {
+        font-size: 1rem;
+        color: #fff;
+      }
+    }
+
+    .mobile_menu {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .nav_menu {
+      padding-top: 3.5rem; //向下移空間給logo
+      background-color: var(--primary-color);
+      display: flex;
+      flex-direction: column;
+      position: absolute; //參考父層.navbar
+      top: 0;
+      right: -100%; // RWD 隱藏
+      width: 60%;
+      height: 100vh;
+      li {
+        padding: 20px;
+        a {
+          font-size: 1.2rem;
+          &:hover {
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.198);
+            font-weight: bold;
+            transition: all 0.3s;
+          }
+        }
+      }
+
+      .mobile_menu {
+        display: block;
+        padding: 0.8rem;
+        button {
+          width: 100%;
+          padding: 8px;
+          font-size: 1.2rem;
+          border: none;
+          border-radius: 24px;
+          background-color: rgba(255, 255, 255, 0.2);
+          margin: 0.5rem 0;
+          color: #fff;
+          cursor: pointer;
+        }
+        .social_icons {
+          padding: 10px;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+    .mobile_menu {
+      display: block;
+    }
+
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    // RWD時再定義
+    .hide {
+      display: none;
+    }
+
+    // RWD .nav_menu 顯示
+    .active {
+      right: 0;
+      transition: right 0.7s; //動畫
+    }
+
+    // RWD .logo 滑動
+    .slide {
+      margin-left: 45%;
+      transition: all 1s;
+    }
+  }
+}

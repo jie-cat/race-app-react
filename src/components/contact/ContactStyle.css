@@ -1,0 +1,81 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1625380217375-b47a800c0665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1807&q=80") no-repeat center center/cover;
+}
+
+.contact .container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container .top {
+  margin-top: 5rem;
+}
+
+.contact .container .top h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact .container form {
+  max-width: 650px;
+  width: 100%;
+}
+
+.contact .container form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.contact .container form div label {
+  font-style: 1rem;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+.contact .container form div input,
+.contact .container form div textarea {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  resize: none;
+}
+
+.contact .container form div input:hover,
+.contact .container form div textarea:hover {
+  -webkit-box-shadow: 0 2px 7px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 2px 7px rgba(255, 255, 255, 0.5);
+}
+
+.contact .container form .bottom button {
+  width: 100%;
+  font-size: 1rem;
+  margin: 0;
+}
+/*# sourceMappingURL=ContactStyle.css.map */

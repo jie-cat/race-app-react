@@ -1,0 +1,129 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+.container .logo {
+  z-index: 7;
+}
+
+.container .logo h1 {
+  color: #fff;
+}
+
+.container .nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .nav_menu li {
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .nav_menu li a {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.container .nav_menu .mobile_menu {
+  display: none;
+}
+
+.container .hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container .nav_menu {
+    padding-top: 3.5rem;
+    background-color: var(--primary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+  }
+  .container .nav_menu li {
+    padding: 20px;
+  }
+  .container .nav_menu li a {
+    font-size: 1.2rem;
+  }
+  .container .nav_menu li a:hover {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.198);
+    font-weight: bold;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .container .nav_menu .mobile_menu {
+    display: block;
+    padding: 0.8rem;
+  }
+  .container .nav_menu .mobile_menu button {
+    width: 100%;
+    padding: 8px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0.5rem 0;
+    color: #fff;
+    cursor: pointer;
+  }
+  .container .nav_menu .mobile_menu .social_icons {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .container .mobile_menu {
+    display: block;
+  }
+  .container .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .container .hide {
+    display: none;
+  }
+  .container .active {
+    right: 0;
+    -webkit-transition: right 0.7s;
+    transition: right 0.7s;
+  }
+  .container .slide {
+    margin-left: 45%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+}
+/*# sourceMappingURL=NavbarStyles.css.map */

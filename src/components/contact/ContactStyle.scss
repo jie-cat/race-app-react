@@ -1,0 +1,59 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1625380217375-b47a800c0665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1807&q=80")
+    no-repeat center center/cover;
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .top {
+      margin-top: 5rem;
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+    form {
+      max-width: 650px;
+      width: 100%;
+      // border: 2px solid red;
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 0;
+        width: 100%;
+        label {
+          font-style: 1rem;
+          color: #fff;
+          padding: 0.5rem 0;
+        }
+        input,
+        textarea {
+          border: none;
+          outline: none;
+          border-radius: 2rem;
+          padding: 0.5rem 1rem;
+          background-color: rgba(255, 255, 255, 0.4);
+          color: #fff;
+          font-family: "Roboto Condensed", sans-serif;
+          resize: none;
+          &:hover {
+            box-shadow: 0 2px 7px rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+      .bottom {
+        button {
+          width: 100%;
+          font-size: 1rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
